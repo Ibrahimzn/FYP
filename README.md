@@ -11,7 +11,6 @@ developing an intelligent traffic light system using adaptive cameras and comput
 For installation: 
 ```
 git clone https://github.com/Ibrahimzn/FYP
-
 ```
 Install https://shorturl.at/aoxF9 and put in main directory
 Go through the Training.ipynb notebook and run the cells to install the required libraries.
