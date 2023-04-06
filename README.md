@@ -8,12 +8,12 @@
 
 ## Installation
 
-[For installation: ]
+[For installation: 
 ```
 git clone https://github.com/Ibrahimzn/FYP
 
 ```
-[Go through the Training.ipynb notebook and run the cells to install the required libraries.]
+Go through the Training.ipynb notebook and run the cells to install the required libraries.]
 
 ## Usage
 
