@@ -12,12 +12,18 @@ For installation:
 ```
 git clone https://github.com/Ibrahimzn/FYP
 ```
-Install https://shorturl.at/aoxF9 and put in main directory
-Go through the Training.ipynb notebook and run the cells to install the required libraries.
+Download the yolov7 files from google drive and unzip it on the main directory https://shorturl.at/aoxF9, you're files should look like this:
+```
+-FYP
+---Main.py
+---ObjDetection.py
+---Training.ipynb
+---yolov7
+```
 
 ## Usage
-
-After installing everything, Run Main.py
+Go through the Training.ipynb notebook and run the cells to install the required libraries.
+After installing everything, Run ``` py Main.py ```
 
 ## Dataset
 
