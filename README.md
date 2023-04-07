@@ -12,7 +12,7 @@ For installation:
 ```
 git clone https://github.com/Ibrahimzn/FYP
 ```
-Download the yolov7 files from google drive and unzip it on the main directory https://shorturl.at/aoxF9, you're files should look like this:
+Download the yolov7 files from google drive and unzip it on the main directory https://shorturl.at/aoxF9, your files should look like this:
 ```
 -FYP
 ---Main.py
@@ -22,7 +22,7 @@ Download the yolov7 files from google drive and unzip it on the main directory h
 ```
 
 ## Usage
-Go through the Training.ipynb notebook and run the cells to install the required libraries.
+Go through the Training.ipynb notebook and run the first and second cells to install the required libraries.
 After installing everything, Run ``` py Main.py ```
 
 ## Dataset
