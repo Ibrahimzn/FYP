@@ -47,9 +47,9 @@ def trafficCycle(dt, model): #traffic light cycle
 
             if secToOff == 0 or sec == 0: #if there are no cars or the time is up, turn the light to yellow
                 print(f'no cars at light {i}, turning Yellow light...')
-                for i in range(3):
+                for k in range(3):
                     sleep(1)
-                    print(f'light {i} is yellow for {3-i} seconds')
+                    print(f'light {i} is yellow for {3-k} seconds')
                 sec = 0
                 break
 
