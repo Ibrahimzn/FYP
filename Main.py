@@ -1,7 +1,6 @@
 import ObjDetection
 from time import sleep
 
-
 trafficLights = [(0,0),
                  (1,0),
                  (2,0),
@@ -10,9 +9,11 @@ trafficLights = [(0,0),
 def main():
     dt = ObjDetection.ObjDetection() #create object detection object
     model = dt.loadModel(0.60) #load model with confidence threshold of 60%
-
-    while True: #infinite loop to keep the traffic light on
-        updateLights(dt, model)
+    try:
+        while True: #infinite loop to keep the traffic light on
+            updateLights(dt, model)
+    except KeyboardInterrupt: # add a keyboard interrupt to stop the program (CTRL + C)
+        print('stopped')
 
 
 def updateLights(dt, model): #update the traffic lights times
