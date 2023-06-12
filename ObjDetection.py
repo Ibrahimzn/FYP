@@ -11,12 +11,18 @@ TIME_MULTIPLIER = 1.25
 
 
 class ObjDetection:
-
+    '''
     pos = [(200, 200, 1000, 700),#upper left
     (200, 900, 1000, 1350),#lower left
     (1500, 900, 2350, 1350),#lower right
     (1500, 200, 2350, 700)] #lower left
-    
+    '''
+
+    pos = [(200, 200, 600, 650),#upper left
+    (200, 900, 650, 1250),#lower left
+    (1500, 900, 1900, 1350),#lower right
+    (1500, 200, 1900, 600)] #lower left
+
     def loadModel(self,conf):
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu') # here to tell the model to use GPU if available or CPU if not
         model = torch.hub.load('yolov7', 'custom', 'yolov7/runs/train/exp11/weights/last.pt', source='local',force_reload = True, verbose=False) # here to load the model
