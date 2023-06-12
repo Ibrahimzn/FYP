@@ -8,11 +8,11 @@ trafficLights = [(0,0),
 
 def main():
     dt = ObjDetection.ObjDetection() #create object detection object
-    model = dt.loadModel(0.60) #load model with confidence threshold of 60%
+    model = dt.loadModel(0.50) #load model with confidence threshold of 60%
     try:
         while True: #infinite loop to keep the traffic light on
             updateLights(dt, model)
-    except KeyboardInterrupt: # add a keyboard interrupt to stop the program (CTRL + C)
+    except KeyboardInterrupt: #keyboard interrupt to stop the program (CTRL + C)
         print('stopped')
 
 
