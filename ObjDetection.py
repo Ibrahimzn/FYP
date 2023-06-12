@@ -42,7 +42,7 @@ class ObjDetection:
             seconds = 0
         elif numOfCars > 0 and numOfCars <= 5:
             seconds = 7
-        elif numOfCars >= 5: 
+        elif numOfCars > 5: 
             seconds = numOfCars * TIME_MULTIPLIER
             if seconds > 40: seconds = 40
         return math.ceil(seconds)
