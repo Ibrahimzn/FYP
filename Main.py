@@ -18,15 +18,8 @@ def main():
 
 def updateLights(dt, model): #update the traffic lights times
     for i in range(4):
-        sec, light = dt.detectObject(model,i)
-        if light == 0:
-            trafficLights[0] = (0, sec)
-        elif light == 1:
-            trafficLights[1] = (1, sec)
-        elif light == 2:
-            trafficLights[2] = (2, sec)
-        elif light == 3:
-            trafficLights[3] = (3, sec)
+        sec,_ = dt.detectObject(model,i)
+        trafficLights[i] = (i,sec)
     #print(trafficLights)
     trafficCycle(dt, model)
 
